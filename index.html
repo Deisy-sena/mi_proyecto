@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creaciones M.I.A Registro</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Registrar Usuario</h1>
+   
+    <div class="formulario-container">
+        <nav>
+            <ul>
+                <li><a href="index.html">Registrar</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Formulario -->
+        <form action="procesar_usuario.php" method="POST" id="registroForm">
+
+            <label for="IdUsuario">Id Usuario:</label>
+            <input type="text" id="IdUsuario" name="IdUsuario" required>
+    
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" required>
+            <label for="contrasena2">Confirmar Contraseña:</label>
+            <input type="password" id="contrasena2" name="contrasena2" required>
+           
+            <button type="submit" name="accion" value="Agregar">Agregar</button>
+        </form>
+    </div>
+
+    <script>
+        // Función para validar que las contraseñas coincidan
+        document.getElementById("registroForm").addEventListener("submit", function(event) {
+            var password = document.getElementById("contrasena").value;
+            var confirmPassword = document.getElementById("contrasena2").value;
+
+            if (password !== confirmPassword) {
+                alert("Las contraseñas no coinciden. Por favor, ingrésalas nuevamente.");
+                event.preventDefault(); // Detiene el envío del formulario
+            }
+        });
+    </script>
+    
+    <script src="js/carrito.js"></script>
+</body>
+</html>

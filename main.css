@@ -1,0 +1,175 @@
+/* Reglas generales del body */
+html, body {
+    height: 100%; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    display: flex; /* Activa Flexbox en el body */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: flex-start; /* Alinea los elementos al inicio */
+    align-items: center; /* Centra los elementos horizontalmente */
+    font-family: Arial, sans-serif; /* Fuente general */
+    background-image: url('imagenes/fondo.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Fija la imagen de fondo */
+    color: #ae4cff; /* Color del texto */
+
+}
+
+/* Asegurar que el contenido del body tenga un alto mínimo */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; /* La altura mínima será igual al alto de la ventana */
+}
+
+/* Estilo del título */
+h1 {
+    text-align: center; /* Centrado del título */
+    color: #1905cc; /* Color del texto */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    margin: 0; /* Elimina márgenes adicionales */
+    font-size: 28px; /* Tamaño de fuente adecuado */
+}
+
+/* Estilo del contenedor del formulario */
+.formulario-container {
+    background: #b1f1d460;
+    background-image: url('imagenes/de21b45d5455633cfb4eec3890cbe815.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(236, 33, 33, 0.1);
+    width: 100%;
+    max-width: 600px; /* Ancho máximo del contenedor */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px; /* Separación superior */
+}
+
+/* ========================== */
+/* FORMULARIOS Y CAMPOS DE ENTRADA */
+/* ========================== */
+
+label {
+    display: block;
+    margin-top: 35px;
+    color: #0e0af0; /* Texto gris */
+    }
+
+div {
+    text-align: center;
+    }
+
+input, textarea, button {
+    width: 80%; /* Ancho del campo */
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    }
+
+button {
+    background-color: #007bff; /* Fondo azul */
+    color: rgb(193, 184, 226); /* Texto verde */
+    border-radius: 2px;
+    cursor: pointer;
+    }
+
+/* ========================== */
+/* MENÚ DE NAVEGACIÓN */
+/* ========================== */
+
+nav {
+    background-color: #70d1b4; /* Fondo claro del menú */
+    padding: 10px; /* Espaciado alrededor del menú */
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinea los enlaces horizontalmente */
+    justify-content: center; /* Centra los enlaces */
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+nav ul li {
+    display: inline; /* Los elementos de la lista se muestran en línea */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 15px 25px; /* Ajusta el espaciado interno del botón */
+    background-color: #3498db; /* Color de fondo de los botones */
+    color: white; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: 'Trebuchet MS', sans-serif; /* Fuente del texto */
+    font-size: 18px; /* Tamaño de la fuente */
+    text-align: center; /* Centra el texto dentro del botón */
+    display: inline-block; /* Hace que el padding funcione correctamente */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suaviza la transición del color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #2980b9; /* Color de fondo más oscuro cuando el mouse pasa por encima */
+    transform: scale(1.1); /* Aumenta el tamaño del botón cuando el mouse pasa por encima */
+}
+
+
+/* ========================== */
+/* ESTILOS DE PRODUCTOS */
+/* ========================== */
+
+.producto {
+    display: flex;
+    flex-wrap: wrap; /* Ajustar productos en varias filas */
+    justify-content: center; /* Centrar los productos */
+    }
+
+.producto .item {
+    background-color: #9ff3b2; /* Fondo blanco para cada producto */
+    border: 1px solid #289fee; /* Borde verde claro */
+    margin: 10px;
+    padding: 10px;
+    width: 200px; /* Ancho fijo para los productos */
+
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+
+.producto .item img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    border-radius: 5px;
+}
+
+.producto .item h3 {
+    color: #9132fd; /* Color del título */
+    font-size: 20px;
+}
+
+.producto .item p {
+    color: #7037f3; /* Color del texto */
+    font-size: 20px;
+}
+.producto .item p {
+    color: #7037f3;
+    font-size: 20px;
+}
+
+.producto .item button {
+    background-color: #03583c; /* Botón verde */
+    color: rgb(224, 214, 224); /* Texto gris claro */
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto .item button:hover {
+    background-color: #3965f5; /* Verde oscuro al pasar el mouse */
+}
